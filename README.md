@@ -5,9 +5,11 @@ An end-to-end machine learning project for detecting fraudulent transactions usi
 The goal of this project is to Train & evaluate multiple ML classifiers
  
 ## Dataset
+
 Source: https://www.kaggle.com/datasets/nelgiriyewithana/credit-card-fraud-detection-dataset-2023.
 
 Features: V1 to V28 and Amount
+
 Target: Class (1 = Fraud, 0 = Not Fraud)
 
 The following classifiers were trained and evaluated:
@@ -46,7 +48,7 @@ Precision, Recall, F1-Score, Confusion Matrix, ROC-AUC Curve
 
 ### 1. **Logistic Regression**
 
-1. Logistic Regression
+ Logistic Regression
 Accuracy: 96.5%
 
 Precision: 0.97 (macro avg)
@@ -55,10 +57,6 @@ Recall: 0.96 (macro avg)
 
 F1-score: 0.96 (macro avg)
 
-Confusion Matrix:
-
-[[55598  1265]
- [2718 54145]]
 Remarks: Performs well with balanced precision and recall. Some misclassifications present.
 
 
@@ -68,24 +66,16 @@ Accuracy: 100%
 
 Precision/Recall/F1: 1.00 (all metrics)
 
-Confusion Matrix:
-
-[[56829    34]
- [    0 56863]]
 
 Remarks: Near-perfect classification with almost no errors.
 
----
 
 ### 3. Decision Tree
+
 Accuracy: 99.8%
 
 Precision/Recall/F1: 1.00 (all metrics)
 
-Confusion Matrix:
-
-[[56683   180]
- [   73 56790]]
 
 Remarks: Extremely high accuracy, very few misclassifications.
 
@@ -95,10 +85,6 @@ Accuracy: 100%
 
 Precision/Recall/F1: 1.00 (all metrics)
 
-Confusion Matrix:
-
-[[56852    11]
- [    0 56863]]
 
 Remarks: Outstanding performance, almost perfect classification.
 
@@ -112,10 +98,6 @@ Recall: 0.92 (macro avg)
 
 F1-score: 0.92 (macro avg)
 
-Confusion Matrix:
-
-[[55619  1244]
- [7932 48931]]
  
 Remarks: Lower performance compared to tree-based models, especially for class 1.
 
@@ -125,10 +107,6 @@ Accuracy: 100%
 
 Precision/Recall/F1: 1.00 (all metrics)
 
-Confusion Matrix:
-
-[[56844    19]
- [    0 56863]]
 
 Remarks: Excellent performance, virtually no misclassifications.
 
@@ -142,10 +120,6 @@ Recall: 0.96 (macro avg)
 
 F1-score: 0.96 (macro avg)
 
-Confusion Matrix:
-
-[[55454  1409]
- [2799 54064]]
 
 Remarks: Comparable to Logistic Regression, with some misclassifications.
 
