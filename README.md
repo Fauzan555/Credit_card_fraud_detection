@@ -2,10 +2,10 @@
 
 ## 📌 Overview
 An end-to-end machine learning project for detecting fraudulent transactions using multiple classification models.
-credit card fraud is a serious issue with highly imbalanced datasets. The goal of this project is to:
+The goal of this project is to:
 
-.Train & evaluate multiple ML classifiers
-.Handle data imbalance using SMOTE
+# Train & evaluate multiple ML classifiers
+ 
 ## Dataset
 Source: https://www.kaggle.com/datasets/nelgiriyewithana/credit-card-fraud-detection-dataset-2023
 Features: V1 to V28 and Amount
