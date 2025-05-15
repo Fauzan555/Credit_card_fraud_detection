@@ -5,29 +5,36 @@ The goal of this project is to Train & evaluate multiple ML classifiers
  
 ## Dataset
 
-Source: https://www.kaggle.com/datasets/nelgiriyewithana/credit-card-fraud-detection-dataset-2023.
+# Source: 
 
-Features: V1 to V28 and Amount
+https://www.kaggle.com/datasets/nelgiriyewithana/credit-card-fraud-detection-dataset-2023.
 
-Target: Class (1 = Fraud, 0 = Not Fraud)
+# Features: 
+
+V1 to V28 and Amount
+
+# Target: 
+
+Class (1 = Fraud, 0 = Not Fraud)
 
 The following classifiers were trained and evaluated:
 
-"Logistic Regression"
+# "Logistic Regression"
 
-"XGBoost"
+# "XGBoost"
 
-"Decision Tree"
+# "Decision Tree"  
 
-"Extra Trees"
+# "Extra Trees"
 
-"Naive Bayes"
+# "Naive Bayes"
 
-"Random Forest"
+# "Random Forest"
 
-"AdaBoost"
+# "AdaBoost"
 
 ## 🧪 Evaluation Metrics (Each model was evaluated based on):
+
 Precision, Recall, F1-Score, Confusion Matrix, ROC-AUC Curve
 
 ## ✅ Results Summary
@@ -47,7 +54,8 @@ Precision, Recall, F1-Score, Confusion Matrix, ROC-AUC Curve
 
 ### 1. **Logistic Regression**
 
- Logistic Regression
+Logistic Regression
+
 Accuracy: 96.5%
 
 Precision: 0.97 (macro avg)
@@ -65,16 +73,13 @@ Accuracy: 100%
 
 Precision/Recall/F1: 1.00 (all metrics)
 
-
 Remarks: Near-perfect classification with almost no errors.
-
 
 ### 3. Decision Tree
 
 Accuracy: 99.8%
 
 Precision/Recall/F1: 1.00 (all metrics)
-
 
 Remarks: Extremely high accuracy, very few misclassifications.
 
@@ -83,7 +88,6 @@ Remarks: Extremely high accuracy, very few misclassifications.
 Accuracy: 100%
 
 Precision/Recall/F1: 1.00 (all metrics)
-
 
 Remarks: Outstanding performance, almost perfect classification.
 
@@ -96,7 +100,6 @@ Precision: 0.93 (macro avg)
 Recall: 0.92 (macro avg)
 
 F1-score: 0.92 (macro avg)
-
  
 Remarks: Lower performance compared to tree-based models, especially for class 1.
 
@@ -105,7 +108,6 @@ Remarks: Lower performance compared to tree-based models, especially for class 1
 Accuracy: 100%
 
 Precision/Recall/F1: 1.00 (all metrics)
-
 
 Remarks: Excellent performance, virtually no misclassifications.
 
@@ -118,7 +120,6 @@ Precision: 0.96 (macro avg)
 Recall: 0.96 (macro avg)
 
 F1-score: 0.96 (macro avg)
-
 
 Remarks: Comparable to Logistic Regression, with some misclassifications.
 
@@ -133,3 +134,5 @@ Baseline Models: Logistic Regression and AdaBoost performed well, but not as wel
 Naive Bayes: This model lagged behind others, particularly in recall for class 1, indicating it's less suited for this dataset.
 
 Recommendation: For deployment or further analysis, XGBoost, Extra Trees, or Random Forest are recommended due to their superior performance.
+
+
