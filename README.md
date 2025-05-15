@@ -13,11 +13,17 @@ Target: Class (1 = Fraud, 0 = Not Fraud)
 The following classifiers were trained and evaluated:
 
 "Logistic Regression"
+
 "XGBoost"
+
 "Decision Tree"
+
 "Extra Trees"
+
 "Naive Bayes"
+
 "Random Forest"
+
 "AdaBoost"
 
 ## 🧪 Evaluation Metrics (Each model was evaluated based on):
