@@ -2,9 +2,7 @@
 
 ## 📌 Overview
 An end-to-end machine learning project for detecting fraudulent transactions using multiple classification models.
-The goal of this project is to:
-
-# Train & evaluate multiple ML classifiers
+The goal of this project is to Train & evaluate multiple ML classifiers
  
 ## Dataset
 Source: https://www.kaggle.com/datasets/nelgiriyewithana/credit-card-fraud-detection-dataset-2023
