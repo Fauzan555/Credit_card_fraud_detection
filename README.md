@@ -1,6 +1,5 @@
-## Credit Card Fraud Detection:
 
-## 📌 Overview
+## 📌 Overview fo project
 An end-to-end machine learning project for detecting fraudulent transactions using multiple classification models.
 The goal of this project is to Train & evaluate multiple ML classifiers
  
