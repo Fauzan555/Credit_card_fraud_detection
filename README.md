@@ -20,9 +20,7 @@ The following classifiers were trained and evaluated:
 "AdaBoost"
 
 ## 🧪 Evaluation Metrics (Each model was evaluated based on):
-Precision, Recall, F1-Score
-Confusion Matrix
-ROC-AUC Curve
+Precision, Recall, F1-Score, Confusion Matrix, ROC-AUC Curve
 
 ## 📊 Results Summary
 
