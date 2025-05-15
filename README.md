@@ -29,85 +29,134 @@ The following classifiers were trained and evaluated:
 ## 🧪 Evaluation Metrics (Each model was evaluated based on):
 Precision, Recall, F1-Score, Confusion Matrix, ROC-AUC Curve
 
-## 📊 Results Summary
+## ✅ Results Summary
 
-| Model              | Accuracy | Precision | Recall | F1-Score | FP | FN |
-|-------------------|----------|-----------|--------|----------|----|----|
-| Logistic Regression | 0.998    | 1.00      | 1.00   | 1.00     | 58 | 137 |
-| XGBoost           | 1.000    | 1.00      | 1.00   | 1.00     | 6  | 20  |
-| Decision Tree     | 1.000    | 1.00      | 1.00   | 1.00     | 20 | 21  |
-| Extra Trees       | 1.000    | 1.00      | 1.00   | 1.00     | 7  | 10  |
-| Naive Bayes       | 0.932    | 0.98      | 0.88   | 0.93     | 1009 | 6697 |
-| Random Forest     | 1.000    | 1.00      | 1.00   | 1.00     | 4  | 19  |
-| AdaBoost          | 1.000    | 1.00      | 1.00   | 1.00     | 20 | 27  |
+| Model              | Accuracy | Precision (1) | Recall (1) | F1-Score (1) |
+|-------------------|----------|---------------|------------|--------------|
+| Logistic Regression | 96.5%   | 0.98          | 0.95       | 0.96         |
+| XGBoost             | 100%    | 1.00          | 1.00       | 1.00         |
+| Decision Tree       | 99.8%   | 1.00          | 1.00       | 1.00         |
+| Extra Trees         | 100%    | 1.00          | 1.00       | 1.00         |
+| Naive Bayes         | 91.9%   | 0.98          | 0.86       | 0.91         |
+| Random Forest       | 100%    | 1.00          | 1.00       | 1.00         |
+| AdaBoost            | 96.3%   | 0.97          | 0.95       | 0.96         |
 
 
 ## 🔍 Detailed Model Analysis
 
 ### 1. **Logistic Regression**
-- **Accuracy:** 99.8%
-- **Confusion Matrix:** 
-  - False Positives (FP): 58
-  - False Negatives (FN): 137
-- Slightly more false negatives than false positives. Performs well overall but not perfect.
+
+1. Logistic Regression
+Accuracy: 96.5%
+
+Precision: 0.97 (macro avg)
+
+Recall: 0.96 (macro avg)
+
+F1-score: 0.96 (macro avg)
+
+Confusion Matrix:
+
+[[55598  1265]
+ [2718 54145]]
+Remarks: Performs well with balanced precision and recall. Some misclassifications present.
+
+
+### 2. XGBoost
+
+Accuracy: 100%
+
+Precision/Recall/F1: 1.00 (all metrics)
+
+Confusion Matrix:
+
+[[56829    34]
+ [    0 56863]]
+
+Remarks: Near-perfect classification with almost no errors.
 
 ---
 
-### 2. **XGBoost**
-- **Accuracy:** 100%
-- **Confusion Matrix:** 
-  - FP: 6
-  - FN: 20
-- Extremely high performance with very few misclassifications. One of the top-performing models.
+### 3. Decision Tree
+Accuracy: 99.8%
 
----
+Precision/Recall/F1: 1.00 (all metrics)
 
-### 3. **Decision Tree**
-- **Accuracy:** 100%
-- **Confusion Matrix:** 
-  - FP: 20
-  - FN: 21
-- High accuracy but slightly more misclassifications than XGBoost or Random Forest.
+Confusion Matrix:
 
----
+[[56683   180]
+ [   73 56790]]
 
-### 4. **Extra Trees**
-- **Accuracy:** 100%
-- **Confusion Matrix:** 
-  - FP: 7
-  - FN: 10
-- Performs similarly to Random Forest and XGBoost with minimal error.
+Remarks: Extremely high accuracy, very few misclassifications.
 
----
+### 4. Extra Trees
 
-### 5. **Naive Bayes**
-- **Accuracy:** 93.2%
-- **Confusion Matrix:** 
-  - FP: 1009
-  - FN: 6697
-- Significantly lower performance. Assumptions of feature independence likely do not hold in this dataset.
+Accuracy: 100%
 
----
+Precision/Recall/F1: 1.00 (all metrics)
 
-### 6. **Random Forest**
-- **Accuracy:** 100%
-- **Confusion Matrix:** 
-  - FP: 4
-  - FN: 19
-- Among the most accurate models with the least number of false positives.
+Confusion Matrix:
 
----
+[[56852    11]
+ [    0 56863]]
 
-### 7. **AdaBoost**
-- **Accuracy:** 100%
-- **Confusion Matrix:** 
-  - FP: 20
-  - FN: 27
-- Performs well overall but slightly more errors compared to XGBoost and Random Forest.
+Remarks: Outstanding performance, almost perfect classification.
 
----
+### 5. Naive Bayes
 
-## 📈 Conclusion
+Accuracy: 91.9%
 
-- **Best Performing Models:** XGBoost, Random Forest, Extra Trees — all achieved near-perfect accuracy with minimal false positives and false negatives.
-- **Underperforming Model:** Naive Bayes — lower precision and recall due to its simplistic assumptions.
+Precision: 0.93 (macro avg)
+
+Recall: 0.92 (macro avg)
+
+F1-score: 0.92 (macro avg)
+
+Confusion Matrix:
+
+[[55619  1244]
+ [7932 48931]]
+ 
+Remarks: Lower performance compared to tree-based models, especially for class 1.
+
+### 6. Random Forest
+
+Accuracy: 100%
+
+Precision/Recall/F1: 1.00 (all metrics)
+
+Confusion Matrix:
+
+[[56844    19]
+ [    0 56863]]
+
+Remarks: Excellent performance, virtually no misclassifications.
+
+### 7. AdaBoost
+
+Accuracy: 96.3%
+
+Precision: 0.96 (macro avg)
+
+Recall: 0.96 (macro avg)
+
+F1-score: 0.96 (macro avg)
+
+Confusion Matrix:
+
+[[55454  1409]
+ [2799 54064]]
+
+Remarks: Comparable to Logistic Regression, with some misclassifications.
+
+## 📝 Conclusion
+
+Best Performers: XGBoost, Extra Trees, and Random Forest achieved perfect or near-perfect accuracy, precision, recall, and F1-scores, making them the top choices for this dataset.
+
+Strong Classical Models: Decision Tree also performed exceptionally well, with only a handful of misclassifications.
+
+Baseline Models: Logistic Regression and AdaBoost performed well, but not as well as the ensemble/tree-based methods.
+
+Naive Bayes: This model lagged behind others, particularly in recall for class 1, indicating it's less suited for this dataset.
+
+Recommendation: For deployment or further analysis, XGBoost, Extra Trees, or Random Forest are recommended due to their superior performance.
