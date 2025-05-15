@@ -9,15 +9,15 @@ Source: https://www.kaggle.com/datasets/nelgiriyewithana/credit-card-fraud-detec
 Features: V1 to V28 and Amount
 Target: Class (1 = Fraud, 0 = Not Fraud)
 
-# The following classifiers were trained and evaluated:
+The following classifiers were trained and evaluated:
 
-"Logistic Regression"
-"XGBoost"
-"Decision Tree"
-"Extra Trees"
-"Naive Bayes"
-"Random Forest"
-"AdaBoost"
+# "Logistic Regression"
+# "XGBoost"
+# "Decision Tree"
+# "Extra Trees"
+# "Naive Bayes"
+# "Random Forest"
+# "AdaBoost"
 
 ## 🧪 Evaluation Metrics (Each model was evaluated based on):
 Precision, Recall, F1-Score
